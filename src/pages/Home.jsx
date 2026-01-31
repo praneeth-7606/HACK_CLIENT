@@ -114,25 +114,8 @@ const Home = () => {
                     </motion.div>
 
                     {/* Stats */}
-                    <motion.div
-                        className="hero-stats"
-                        initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.7, delay: 0.4 }}
-                    >
-                        {stats.map((stat, index) => (
-                            <motion.div
-                                key={stat.label}
-                                className="stat-item"
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.5 + index * 0.1 }}
-                            >
-                                <span className="stat-value">{stat.value}</span>
-                                <span className="stat-label">{stat.label}</span>
-                            </motion.div>
-                        ))}
-                    </motion.div>
+
+
                 </div>
             </section>
 

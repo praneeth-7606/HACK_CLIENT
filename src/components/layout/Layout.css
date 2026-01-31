@@ -47,6 +47,45 @@ body:has(.sidebar-modern.collapsed) .navbar {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Home Page Navbar Branding (Public Pages Only) */
+.navbar-brand-home {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    text-decoration: none;
+    padding: var(--spacing-2);
+    transition: all 0.3s ease;
+}
+
+.navbar-logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.navbar-brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.navbar-brand-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+}
+
+.navbar-brand-tagline {
+    font-size: 0.7rem;
+    color: #64748b;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
 .navbar-brand:hover {
     background: rgba(99, 102, 241, 0.05);
     transform: translateY(-1px);

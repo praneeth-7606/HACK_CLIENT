@@ -76,7 +76,17 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-container">
-            
+
+                {/* Logo - Only on Home/Public Pages (not Dashboard) */}
+                {!isAuthenticated && (
+                    <Link to="/" className="navbar-brand-home">
+                        <img src="/logo.png" alt="CivicConnect" className="navbar-logo-img" />
+                        <div className="navbar-brand-text">
+                            <span className="navbar-brand-name">CivicConnect</span>
+                            <span className="navbar-brand-tagline">Empowering Communities</span>
+                        </div>
+                    </Link>
+                )}
 
                 {/* Desktop Navigation */}
                 <div className="navbar-nav">

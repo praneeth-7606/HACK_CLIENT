@@ -24,19 +24,20 @@
 /* Hero Section */
 .my-ideas-hero {
     position: relative;
-    padding: 1rem 2rem 3rem;
+    padding: 3rem 2rem 2rem;
     text-align: center;
     overflow: hidden;
+    min-height: 350px;
 }
 
 .hero-glow {
     position: absolute;
-    top: -50%;
+    top: -30%;
     left: 50%;
     transform: translateX(-50%);
-    width: 800px;
-    height: 800px;
-    background: radial-gradient(circle, rgba(139, 92, 246, 0.3), transparent 70%);
+    width: 1000px;
+    height: 1000px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.4), transparent 70%);
     filter: blur(80px);
     pointer-events: none;
     animation: pulse 4s ease-in-out infinite;
@@ -59,9 +60,9 @@
 .hero-content {
     position: relative;
     z-index: 1;
-    max-width: 800px;
-    height: 150px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding-bottom: 2rem;
 }
 
 .hero-icon {
@@ -86,7 +87,7 @@
     font-size: 3.5rem;
     font-weight: 900;
     color: #f1f5f9;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
 }
 
@@ -160,9 +161,9 @@
 /* Stats Overview */
 .stats-overview {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    padding: 0 2rem 2rem;
+    padding: 1.5rem 2rem 3rem;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -705,6 +706,26 @@
     .idea-actions {
         flex-direction: row;
         width: 100%;
+    }
+
+    /* Stats responsive */
+    .stats-overview {
+        grid-template-columns: 1fr;
+        padding: 0 1rem 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .stats-overview {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

@@ -10,8 +10,10 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@browserbasehq/stagehand": "^3.0.8",
         "@headlessui/react": "^2.2.9",
         "@heroicons/react": "^2.2.0",
+        "@langchain/community": "^1.1.12",
         "axios": "^1.6.2",
         "clsx": "^2.1.1",
         "framer-motion": "^10.16.16",
@@ -25,7 +27,8 @@
         "react-leaflet": "^4.2.1",
         "react-router-dom": "^6.21.0",
         "recharts": "^3.7.0",
-        "tailwind-merge": "^3.4.0"
+        "tailwind-merge": "^3.4.0",
+        "zod": "^4.3.6"
     },
     "devDependencies": {
         "@types/react": "^18.2.43",
